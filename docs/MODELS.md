@@ -14,5 +14,6 @@
 
 檔名與網址取自 ComfyUI 內建範本 `video_ltx2_5_t2v.json`，大小取自 Hugging Face API。
 
-## 待確認
-- Gemma 4 基底模型的廠商（Lightricks 頁面未寫明）。Gemma 一般為 Google 的開放權重模型系列，但這次頁面沒有明寫，需到官方模型卡確認廠商後再勾掉。
+## 已確認
+- Gemma 4 12B 基底模型的廠商是 Google（授權 Apache 2.0），2026-11-07 查證，來源：[Wikipedia: Gemma (language model)](https://en.wikipedia.org/wiki/Gemma_(language_model))、[Jon Peddie Research](https://www.jonpeddie.com/news/google-fills-out-the-middle-with-the-gemma-4-12b/)、[FoneArena](https://www.fonearena.com/blog/?p=484210)。Lightricks 提供的是加上投影層、轉成 int8 的客製版，符合 C2。
+- 以上為第三方報導與百科，沒有直接讀 Google 官方模型卡；發布日期各來源不一致（5/23 或 6/3），不影響廠商判斷。
