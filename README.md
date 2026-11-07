@@ -52,6 +52,21 @@ local-video-studio/
 5. 在介面中載入 LTX-2 範本，以 768×512、5 秒的設定跑第一支影片
 6. 記錄 VRAM 峰值與耗時，回填到 `SPEC.md` 第 6 節
 
+## 啟動 ComfyUI 並用網頁開啟
+
+在自己的 PowerShell 視窗執行（路徑 `D:\ComfyUI` 是作者這台電腦的安裝位置，換電腦請自行修改）：
+
+```
+cd D:\ComfyUI
+.\.venv\Scripts\python.exe main.py --listen 127.0.0.1 --port 8188
+```
+
+視窗出現 `To see the GUI go to: http://127.0.0.1:8188` 後，用瀏覽器開啟 <http://127.0.0.1:8188>，左側選 Templates 載入 LTX-2.5 Text to Video（本機版，名稱不含 API）。關閉時在該視窗按 `Ctrl+C`。
+
+- `--listen 127.0.0.1` 代表只有本機能連線，手機與其他電腦打不開。
+- 請在自己的終端機啟動，不要由 Claude Code 背景啟動：1080p 時系統記憶體會吃滿，背景程式可能被系統自動停掉（見 `SPEC.md` 第 6 節）。
+- 用腳本生成（`scripts/run_comfy.py`）時，也要先照上面啟動 ComfyUI，不需要開網頁。
+
 ## 進度
 
 - [x] M0 環境建置

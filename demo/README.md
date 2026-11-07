@@ -61,7 +61,9 @@
 ## 重現方式
 
 ```
-# 1. 啟動 ComfyUI（需已依 README 裝好環境與模型）
+# 1. 在另一個終端機啟動 ComfyUI（需已裝好環境與模型；說明見主 README「啟動 ComfyUI 並用網頁開啟」）
+#    cd D:\ComfyUI
+#    .\.venv\Scripts\python.exe main.py --listen 127.0.0.1 --port 8188
 # 2. 產生每個鏡頭的 workflow
 python scripts/build_workflow.py shots/news-1107.yaml
 # 3. 逐一生成（每個約 6–7 分鐘）
