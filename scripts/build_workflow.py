@@ -5,7 +5,7 @@ from pathlib import Path
 import yaml
 
 ROOT = Path(__file__).resolve().parent.parent
-FIELDS = ("prompt", "negative", "width", "height", "frames", "fps", "seed")
+FIELDS = ("prompt", "negative", "width", "height", "frames", "seconds", "fps", "seed")
 
 
 def load_shots(path):
@@ -52,8 +52,8 @@ def build(shot, template, nodemap):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("shots")
-    ap.add_argument("--template", default=ROOT / "workflows/templates/ltx2_t2v_api.json")
-    ap.add_argument("--map", default=ROOT / "workflows/templates/ltx2_t2v_map.json")
+    ap.add_argument("--template", default=ROOT / "workflows/templates/ltx2_5_t2v_api.json")
+    ap.add_argument("--map", default=ROOT / "workflows/templates/ltx2_5_t2v_map.json")
     ap.add_argument("--out", default=ROOT / "workflows/out")
     ap.add_argument("--server", default="http://127.0.0.1:8188")
     ap.add_argument("--no-check", action="store_true", help="ComfyUI 沒開時略過節點驗證")

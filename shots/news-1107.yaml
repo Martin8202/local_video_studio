@@ -1,0 +1,24 @@
+project: news-1107
+defaults:
+  width: 1920
+  height: 1080
+  seconds: 5
+  fps: 24
+  seed: -1          # -1 = 隨機
+  negative: "blurry, distorted, low quality, text, watermark, logo, readable letters"
+shots:
+  # 1 台股重挫：電子股、外資匯出
+  - id: 01
+    prompt: "A dim trading floor at dusk with rows of monitors showing red falling line charts, traders standing still and watching, slow push-in camera, cold blue and red screen glow, low murmur of voices and soft electronic beeps"
+  # 2 鴻海營收創高：工廠與伺服器
+  - id: 02
+    prompt: "A clean modern factory hall where robotic arms assemble glowing server racks on a bright production line, smooth lateral tracking shot, crisp white overhead lighting, rhythmic machinery hum and soft mechanical clicks"
+  # 3 美股晶片股遭拋售：資料中心與政治
+  - id: 03
+    prompt: "A vast data center corridor lined with blinking server racks, lights flickering and some racks going dark one by one, slow dolly back, cool blue light turning red, deep fan noise fading into silence"
+  # 4 Airbnb、Cloudflare 財報優於預期
+  - id: 04
+    prompt: "A cozy living room and a laptop on a table showing a map with glowing pins, a traveler smiles and closes a suitcase, gentle handheld camera, warm morning window light, soft acoustic music and a zipper sound"
+  # 5 豐田財測上調：油電車熱銷、日圓走弱
+  - id: 05
+    prompt: "A row of white hybrid cars rolling out of a showroom into bright daylight on a busy Tokyo street, smooth crane shot rising up, sunny cheerful light, quiet electric motor hum and distant city ambience"

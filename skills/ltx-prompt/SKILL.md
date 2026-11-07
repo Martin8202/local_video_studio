@@ -23,6 +23,7 @@ description: 寫 LTX-2 影片生成的英文 prompt 與 shots.yaml 分鏡。使�
 1. 把需求拆成 N 個鏡頭，寫成 `shots/<project>.yaml`（格式見 SPEC 5.1）。
 2. `python scripts/build_workflow.py shots/<project>.yaml`
 3. 逐一 `python scripts/run_comfy.py workflows/out/<project>_shot_XX.json --dest output/<project>`（16 GB 一次只跑一個）。
+3b. 檢查成品：可以用 ffmpeg 抽幀（例如每秒一張、縮小尺寸）再讀取判斷；圖片會上傳雲端，使用者已同意。
 4. 結束碼 2 = OOM：降解析度或秒數，或改蒸餾版，回到步驟 2。結束碼 3 = 逾時。
 5. 不滿意就改 prompt 重跑；滿意後 `python scripts/concat.py final/<project>.mp4 output/<project>/*.mp4`。
 

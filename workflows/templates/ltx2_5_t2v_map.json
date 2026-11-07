@@ -1,0 +1,30 @@
+{
+ "prompt": {
+  "node": "376",
+  "field": "value"
+ },
+ "negative": {
+  "node": "373",
+  "field": "text"
+ },
+ "width": {
+  "node": "372",
+  "field": "value"
+ },
+ "height": {
+  "node": "360",
+  "field": "value"
+ },
+ "seconds": {
+  "node": "362",
+  "field": "value"
+ },
+ "fps": {
+  "node": "361",
+  "field": "value"
+ },
+ "seed": {
+  "node": "339",
+  "field": "noise_seed"
+ }
+}
