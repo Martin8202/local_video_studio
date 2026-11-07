@@ -9,6 +9,12 @@
 
 完整設計見 [`SPEC.md`](SPEC.md)。
 
+## Demo
+
+用 5 則財經新聞生成 25 秒短片，全程本機生成：[`demo/`](demo/README.md)（成品 [`news-1107.mp4`](demo/news-1107.mp4)）
+
+![demo 縮圖](demo/news-1107-contact-sheet.jpg)
+
 ## 運作方式
 
 ```
