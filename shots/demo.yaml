@@ -1,0 +1,13 @@
+project: demo-01
+defaults:
+  width: 768
+  height: 512
+  seconds: 5
+  fps: 24
+  seed: -1          # -1 = 隨機
+  negative: "blurry, distorted, low quality"
+shots:
+  - id: 01
+    prompt: "A golden retriever runs across a beach at sunset, slow tracking shot from the side, warm golden light, waves crashing and gentle wind"
+  - id: 02
+    prompt: "A paper boat floats down a rain-filled gutter, low-angle close-up, overcast soft light, steady rain and trickling water"

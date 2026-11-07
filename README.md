@@ -7,7 +7,7 @@
 - 🎬 影像與音訊一次生成（LTX-2，Lightricks）
 - 🤖 Claude Code 負責寫 prompt、組 workflow、呼叫 ComfyUI API
 
-完整設計見 [`docs/SPEC.md`](docs/SPEC.md)。
+完整設計見 [`SPEC.md`](SPEC.md)。
 
 ## 運作方式
 
